@@ -1,0 +1,12 @@
+
+git commit -a -m "mensaje del commit" (utiliza el git commit y add a la vez)
+
+git checkout *branch o lo que fuera* (moverme entre repositorios, branches y commits)
+
+merge : incorporar partes de un brench en otro.
+para que el merge funcione tengo que pararme en el lugar que quiero que se actualize (HEAD en el lugar a act)
+
+tag: git tag -a <nombre del tag> -m "descripcion" 
+git tag -a v1.0 -m"primera version estable" se hacen en produccion
+
+rebase : metodologia para organizar los grafos en una sola linea sin ramificaciones
