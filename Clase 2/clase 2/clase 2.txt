@@ -1,3 +1,8 @@
+git init (crea un repositorio local)
+
+git config --local user.name "nombre"
+
+git config --local user.email "email"
 
 git commit -a -m "mensaje del commit" (utiliza el git commit y add a la vez)
 
@@ -10,3 +15,17 @@ tag: git tag -a <nombre del tag> -m "descripcion"
 git tag -a v1.0 -m"primera version estable" se hacen en produccion
 
 rebase : metodologia para organizar los grafos en una sola linea sin ramificaciones
+
+git clone <url del repositorio> (descarga una copia de todos los objetos dentro de la rama master)
+
+REVERTIR CAMBIOS :
+  RESET: (git reset <--algo>) mueve el HEAD a una ubicacion anterior al repositorio 
+ --soft: 
+ --mixed:
+ --hard: vuelve a un commit anterior desapareciendo los sucesores
+  
+  REVERT: (git revert) revierte los cambios de un/os commit/s sin modificar el historial previo, sino que genera mas historial dentro del repositorio
+ 
+ RECUPERAR CAMBIOS:
+  REFLOG: (git reflog): Es un log de acciones hechas en consola
+  se tiene que hacer un "git checkout" hacia el commit que muestra reflog al que queremos volver
